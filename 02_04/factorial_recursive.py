@@ -5,7 +5,7 @@ Robin Andrews - https://compucademy.net/
 
 
 def factorial(n):
-    pass
+
 
 
 print(factorial(4))
