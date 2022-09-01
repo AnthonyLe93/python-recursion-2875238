@@ -5,11 +5,16 @@ Robin Andrews - https://compucademy.net/
 
 
 def list_sum(a_list):
-    pass
+    sum = 0
+    for i in range(len(a_list)):
+        sum += a_list[i]
+    return sum
 
 
 def list_sum_recursive(a_list):
-    pass
+    if len(a_list) == 0:
+        return 0
+    return a_list[0] + list_sum_recursive(a_list[1:])
 
 
 assert list_sum([2, 3, 5, 7]) == 17
